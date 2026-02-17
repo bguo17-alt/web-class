@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    position: fixed;
+    background-color: rgb(234, 244, 194);
+    z-index: 100000000;
+
+    /*don't need px for z-index*/
+    width: 100%;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+li {
+    display: inline-block;
+    background-color: rgb(234, 244, 194);
+    margin: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+
+    /*use property display to make li horiztonal */
+}
+
+a {
+    color: rgb(3, 185, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(4, 49, 0);
+}
+
+a:hover{
+    color:rgb(234, 244, 194);
+    background-color: rgb(31, 38, 2);
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#opener {
+    background-color: rgb(41, 107, 13);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+
+/*vh stands for view height*/
+
+}
+
+
+h2 {
+    color:rgb(26, 101, 2); 
+    font-size:200px;
+    z-index: 97;
+    left: 100px;
+    top: 100px;
+    position:absolute;
+
+
+
+}
+
+h2:hover{
+    color: rgb(234, 244, 194); 
+
+}
+
+
+h3 {
+    color:rgb(26, 101, 2); 
+    font-size:300px;
+    z-index: 97;
+    right: 90px;
+    top: 400px;
+    position:absolute;
+
+
+}
+
+h3:hover{
+    color: rgb(234, 244, 194); 
+
+}
+
+
+h6 {
+    color:rgb(26, 101, 2); 
+    font-size:100px;
+    z-index: 97;
+    top: 400px;
+    left: 10px;
+    position:absolute;
+
+}
+
+h6:hover{
+    color: rgb(234, 244, 194)
+
+}
+
+h8 {
+    color:rgb(26, 101, 2); 
+    font-size:100px;
+    z-index: 97;
+    top: 210px;
+    right: 10px;
+    position:absolute;
+
+}
+
+h8:hover{
+    color: rgb(234, 244, 194)
+
+}
+
+
+
+
+.matchalattecup{
+    background-image:url(images/matcha\ cup.png);
+    height: 600px;
+    width: 600px;
+    background-size: contain;
+    position: absolute;
+    bottom:-200px;
+    right: 780px;
+    z-index: 597;
+    background-repeat: no-repeat;
+}
+
+
+
+/*facts section*/
+
+#facts {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(85, 159, 54);
+    background-size: cover;
+    background-position: bottom;
+
+
+}
+
+h4{
+    color:rgb(234, 244, 194);
+    font-size: 24px;
+
+}
+
+h5{
+    color:rgb(234, 244, 194);
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 300px;
+
+}
+
+/*CSS FLEXBOX*/
+
+.flex-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*pushes things to the center of parent*/
+    align-items: center;
+
+}
+
+
+
+.flex-child{
+    margin: 0px 50px 0 25px;
+
+}
+
+/*google font*/
+
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+
+  /*refer to the google font website to see suggested weights */
+
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.ibm-plex-serif-regular {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*SANS SERIF*/
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*JAPANESE FONT*/
+
+.mochiy-pop-one-regular {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*video section*/
+
+#videos {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/matchapowderfield.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+iframe {
+    margin: 200px 25px;
+}
+
+/* PHASES SECTION*/
+
+.parent {
+    /*this is THE PARENT - basically the entire grid*/
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+text-align: center;
+width: 75%;
+/*telling how much of the screen you want to fill up*/
+margin: 0 auto;
+/*combined with width ^^ this allows to make grid width smaller and centered*/
+}
+
+.div1 {
+     grid-area: 1 / 1 / 2 / 4; 
+        background-size: contain;
+        background-position: center;
+
+}
+
+h9 {
+
+    color:rgb(234, 244, 194); 
+    position:absolute;
+    font-size: 70px;
+
+}
+
+
+.div2 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(images/matchagradebest.png);
+    /*you want to put image of the moon BEHIND the text*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:0.5s;
+    /* background image will repeat if you don't do ^*/
+}
+
+.div2:hover { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url(images/matchagradebest.png);
+    /*you want to put image of the moon BEHIND the text*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+        z-index: 100;
+        margin-top:-100px;
+    /* background image will repeat if you don't do ^*/
+}
+
+.div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+        background-image: url(images/matchagrade2.png);
+        background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+       transition:0.5s;
+}
+
+.div3:hover { 
+    grid-area: 2 / 2 / 3 / 3; 
+        background-image: url(images/matchagrade2.png);
+       transform: rotate(90deg);
+        z-index: 100;
+        margin-top:-100px;
+}
+
+.div4 {
+     grid-area: 2 / 3 / 3 / 4; 
+     background-image: url(images/matchagrade3.png);
+         background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+           transition:0.5s;
+}
+
+.div4:hover {
+     grid-area: 2 / 3 / 3 / 4; 
+     background-image: url(images/matchagrade3.png);
+       transform: rotate(90deg);
+        z-index: 100;
+        margin-top:-100px;
+}
+ 
+.div5 { 
+    grid-area: 3 / 1 / 4 / 2;
+    width: 350px;
+    margin-top: 60px;
+ }
+
+ .div6 { grid-area: 3 / 2 / 4 / 3; 
+        width: 350px;
+            margin-top: 60px;
+}
+
+ .div7 { grid-area: 3 / 3 / 4 / 4; 
+        width: 350px;
+            margin-top: 60px;
+}
+
+
+#grades{
+    padding-bottom: 30px;
+    background-color: rgb(6, 42, 4);
+    background-size: cover;
+        
+}
+
+p{
+        opacity: 0%;
+}
+
+p:hover{
+    color:rgb(234, 244, 194);
+    font-size:27px;
+    text-transform: uppercase;
+    opacity: 100%;
+    transform: rotate(-90deg);
+    z-index: 1;
+
+}
+
+.parent > div{
+    height: 310px;
+    /*You are not making the parent a height of 300px, you are maing the invididual children a height of 300px. Making all the parent INSIDE the DIV of a height of 300. ALL DIVS inside the class name "parent" are going to have the below traits*/
+
+    /*display property to center content both vertically and horixzontally*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
