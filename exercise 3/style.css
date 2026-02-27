@@ -29,10 +29,11 @@
 
 .audio {
     position: absolute;
-    top: 190px;
-    left: 480px;
+    top: 195px;
+    left: 450px;
     width: 12%;
         height:3%;
+    z-index: 800;
 }
 
 body {
@@ -115,6 +116,8 @@ animation-duration: 1s;
 h2 {
     color: white;
     font-size: 120px;
+    z-index: 10;
+        margin-top: 30px;
 }
 
 
@@ -267,4 +270,22 @@ p:hover {
             transform: translateY(-30px);
     
 
+
+}
+
+
+/*no one*/
+
+.noone {
+    display: inline-block;
+    opacity: 1;
+    transition: all 3s ease-in-out;
+
+
+}
+
+.noone:hover {
+    color: white;
+    transition: all 1s ease-in;
+    
 }
