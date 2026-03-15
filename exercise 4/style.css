@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+body{
+    background-color: black;
+}
+#headline {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+      background-color: rgb(0, 0, 0);
+}
+
+
+#content {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 800;
+  font-style: normal;
+      background-color: rgb(0, 0, 0);
+}
+
+
+/*FULLSCREEN BELOW, SWAP TEXT 3*/
+@media screen and (max-width: 1920px) {
+    body {
+    background-image: url(images/bg1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: 1280px 720px;
+    }
+
+
+    .default3 {
+        display: inline;
+        color:white;
+    }
+
+
+    .hover3 {
+        display: none;
+    }
+
+    .swap-text3:hover .default3{
+        display: none;
+        opacity:0;
+        cursor: pointer;
+    }
+
+    .hover3 {
+        width: 100%;
+        color:rgb(245, 245, 245);
+        opacity: 0;
+        display: none;
+    }
+
+    .swap-text3:hover .hover3 {
+        color: rgb(255, 255, 255);
+        display: inline;
+        opacity: 1;
+
+    }
+
+
+#headline {
+
+    width: 80%;
+    margin: 50px auto 50px auto;
+    position: relative;
+    /*these width and margin settings push things to the center*/
+        color: white;
+        background-color: black;
+}
+
+.text1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    color: white;
+}
+
+
+
+#content {
+    width: 100;
+    margin: 50px 50px 50px 50px;
+
+    display: flex;
+    /*above makes the two children appear side by side*/
+
+}
+
+.column {
+    width: 50%;
+    color: white;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin-right: 50px;
+    line-height: 1.4;
+    margin: 10px;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#bottom {
+    width: 80%;
+    margin: 50px auto 50px auto;
+    display: none;
+}
+
+#bottom img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*MEDIA QUERIES FOR A RESPONSIVE WEBSITE*/
+
+
+
+@media screen and (max-width: 1800px) {
+    body {
+    background-image: url(images/bg2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1280px 720px;
+    }
+}
+
+
+/*SWAP TEXT2 BELOW*/
+@media screen and (max-width: 1400px) {
+    body {
+    background-image: url(images/bg3.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1280px 720px;}
+
+    .default3 {
+        display: none;
+    }
+    .default2 {
+        display: inline;
+        color:white;
+    }
+
+    #content 
+    {
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .hover2 {
+        display: inline;
+        color:white;
+        display: none;
+    }
+
+
+    .swap-text2:hover .default2{
+        display: none;
+        opacity:0;
+
+    }
+
+    .hover2 {
+        width: 100%;
+        color:rgb(245, 245, 245);
+        opacity: 0;
+        display: none;
+    }
+
+    .swap-text2:hover .hover2 {
+        color: rgb(255, 255, 255);
+        display: inline;
+        opacity: 1;
+
+    }
+
+
+#bottom {
+    display: block;
+    margin-bottom:50px;
+}
+}
+
+/*SWAPTEXT ORIGINAL BELOW*/
+@media screen and (max-width: 600px) {
+    body {
+    background-image: url(images/bg4.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1280px 720px;
+    }
+
+        .default3 {
+        display: none;
+    }
+
+    #content 
+    {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .hover2 {
+        display: none;
+    }
+
+    .default2 {
+        display: none;
+    }
+    .default {
+        width: 100%;
+        color:white;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    
+  .swap-text:hover .default{
+        display: none;
+        opacity:0;
+    }
+
+    .hover {
+        width: 100%;
+        color:rgb(245, 245, 245);
+        opacity: 0;
+        display: none;
+    }
+
+    .swap-text:hover .hover {
+        color: rgb(255, 255, 255);
+        display: inline;
+        opacity: 1;
+
+    }
+
+    }}
+
+
+
+}
