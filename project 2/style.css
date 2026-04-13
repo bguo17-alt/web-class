@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: rgb(255, 247, 236);
+}
+
+h1 {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 11vw;
+  line-height: 90%;
+}
+
+section {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255, 248, 238);
+    background-image: url(images/forestcover.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.streets {
+    height: 100vh;
+
+    /*the browser understands width better as percentage*/
+    width: 100%;
+    background-image: url(images/imagesub.png);
+    background-size: cover;
+    background-position:center;
+}
+
+
+h2 {
+    font-size: 4vw;
+    line-height:1.4;
+    font-family: "La Belle Aurore", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.walking{
+    width: 90%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+.choose div {
+width: 50%;
+}
+
+
+.choose div a {
+    background-color: rgb(48, 34, 6);
+    border-radius: 25px;
+    display: block;
+    margin: 5%;
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.choose div a:hover{
+    background-color: rgb(181, 147, 11);
+    box-shadow:5px 5px 5px 5px rgba(238, 236, 226, 0.5);
+}
+
+.blackbg{
+    background-color: black;
+    color: white;
+}
+
+
+
+.king{
+    height: 100vh;
+    /*clock still has a space around it because there is 10% padding in each section and the clock is IN a section*/
+
+    width: 100%;
+    background-image: url(images/king.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.quote div {
+    width: 50%;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(200%);
+        opacity: 0.5;
+    }
+
+
+
+}
+
+.animate {
+    animation: grow 1s 0s
+    infinite alternate;
+}
+
+.police {
+    height: 80vh;
+    width:100%;
+    background-image: url(images/imagesub.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+.police:hover{
+    background-image: url(images/imagesub.png);
+}
+
+.streets-end{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/imagesub.png);
+    background-size: cover;
+    background-position: center;
+}
